@@ -98,7 +98,7 @@ defmodule PhoenixPubSubBuffered do
 
     children =
       Enum.flat_map(groups, fn group ->
-        producer_id = Module.concat(group, Producer)
+        producer_id = Module.concat(group, :Producer)
 
         [
           Supervisor.child_spec({Producer, {buffer_size, group}}, id: producer_id),
