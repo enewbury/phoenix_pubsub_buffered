@@ -8,7 +8,7 @@ A Phoenix.PubSub adapter that distributes messages between nodes using the erlan
 
 This means that you can have nodes dissconnect temporarily from the cluster, and then "catch up" when they rejoin by maintaining a buffer of messages, and read cursors.
 
-See the docs for more information.
+See the [Docs](https://hexdocs.pm/phoenix_pubsub_buffered/PhoenixPubSubBuffered.html) for more information.
 
 ## Usage
 
